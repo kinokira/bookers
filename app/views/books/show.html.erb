@@ -1,0 +1,10 @@
+<div class="show-contents">
+  <div class="show-text success-message">
+      <%= flash[:notice]%>
+  </div>
+  <h6 class="show-text">Title: <%= @book.title %></h6>
+  <h6 class="show-text">Body: <%= @book.body %></h6>
+</div>
+
+<p class="link-others"><%= link_to "Edit", edit_book_path(@book.id)%> | <%=link_to 'Back', books_path %></p>
+
